@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>QR Code Generator</h1>
+    <input type="text" id="qrText" placeholder="Enter text or URL..." />
+    <button id="generateBtn">Generate QR Code</button>
+
+    <div class="qr-result">
+      <canvas id="qrCanvas"></canvas>
+      <p id="qrLabel"></p>
+    </div>
+
+    <div class="actions">
+      <button id="downloadBtn">📥 Download</button>
+      <button id="copyLinkBtn">📋 Copy QR Image</button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
