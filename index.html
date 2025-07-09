@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Code Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="container">
-    <h1>QR Code Generator</h1>
+    <h1>🔳 QR Code Generator</h1>
     <input type="text" id="qrText" placeholder="Enter text or URL..." />
-    <button id="generateBtn">Generate QR Code</button>
+    
+    <div class="controls">
+      <label>Size: <input type="range" id="qrSize" min="100" max="500" value="250" /></label>
+      <label>Foreground: <input type="color" id="fgColor" value="#000000" /></label>
+      <label>Background: <input type="color" id="bgColor" value="#ffffff" /></label>
+    </div>
 
-    <div class="qr-result">
+    <div class="buttons">
+      <button id="generateBtn">🔁 Generate</button>
+      <button id="clearBtn">❌ Clear</button>
+    </div>
+
+    <div class="qr-output">
       <canvas id="qrCanvas"></canvas>
       <p id="qrLabel"></p>
     </div>
 
     <div class="actions">
       <button id="downloadBtn">📥 Download</button>
-      <button id="copyLinkBtn">📋 Copy QR Image</button>
+      <button id="copyLinkBtn">📋 Copy Image Link</button>
     </div>
   </main>
 

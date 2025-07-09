@@ -1,47 +1,69 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #1e1f2f;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1f2f, #2d2e4e);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
+  text-align: center;
 }
 
 .container {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 12px;
   width: 90%;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-input {
+input[type="text"] {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
   border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.controls label {
+  display: block;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.controls input[type="range"],
+.controls input[type="color"] {
+  margin-left: 10px;
+}
+
+.buttons, .actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
 
 button {
   background: #5e60ce;
   border: none;
   padding: 10px 15px;
-  border-radius: 6px;
+  border-radius: 8px;
   color: white;
-  margin: 5px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
   background: #4d4fba;
 }
 
-.qr-result {
+.qr-output {
   margin: 20px 0;
 }
 
