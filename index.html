@@ -8,13 +8,15 @@
 </head>
 <body>
   <main class="container">
-    <h1>🔳 QR Code Generator</h1>
-    <input type="text" id="qrText" placeholder="Enter text or URL..." />
-    
+    <h1>🔳 Advanced QR Code Generator</h1>
+    <p class="description">Easily generate and download customized QR codes with adjustable colors, size, and content.</p>
+
+    <input type="text" id="qrText" placeholder="Enter text, link, or any content..." />
+
     <div class="controls">
-      <label>Size: <input type="range" id="qrSize" min="100" max="500" value="250" /></label>
-      <label>Foreground: <input type="color" id="fgColor" value="#000000" /></label>
-      <label>Background: <input type="color" id="bgColor" value="#ffffff" /></label>
+      <label>📐 Size: <input type="range" id="qrSize" min="100" max="500" value="250" /></label>
+      <label>🎨 Foreground: <input type="color" id="fgColor" value="#000000" /></label>
+      <label>🎨 Background: <input type="color" id="bgColor" value="#ffffff" /></label>
     </div>
 
     <div class="buttons">
@@ -24,13 +26,17 @@
 
     <div class="qr-output">
       <canvas id="qrCanvas"></canvas>
-      <p id="qrLabel"></p>
+      <p id="qrLabel" class="info"></p>
     </div>
 
     <div class="actions">
-      <button id="downloadBtn">📥 Download</button>
-      <button id="copyLinkBtn">📋 Copy Image Link</button>
+      <button id="downloadBtn">📥 Download PNG</button>
+      <button id="copyLinkBtn">📋 Copy Image</button>
     </div>
+
+    <footer class="footer">
+      <p>Created with ❤️ by Christian • <a href="https://github.com" target="_blank">GitHub</a></p>
+    </footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>

@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #1e1f2f, #2d2e4e);
+  background: linear-gradient(135deg, #202244, #2d2e4e);
   color: white;
   display: flex;
   justify-content: center;
@@ -12,27 +12,40 @@ body {
 }
 
 .container {
-  background: rgba(0,0,0,0.6);
-  padding: 30px;
-  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 35px 25px;
+  border-radius: 14px;
   width: 90%;
-  max-width: 500px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  max-width: 540px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #ccc;
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: none;
   border-radius: 6px;
   margin-bottom: 15px;
   font-size: 1rem;
+  background: #f4f4f4;
+  color: #333;
 }
 
 .controls label {
   display: block;
   margin: 10px 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .controls input[type="range"],
@@ -43,15 +56,15 @@ input[type="text"] {
 .buttons, .actions {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin: 10px 0;
+  gap: 12px;
+  margin: 15px 0;
   flex-wrap: wrap;
 }
 
 button {
   background: #5e60ce;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 18px;
   border-radius: 8px;
   color: white;
   font-weight: bold;
@@ -64,9 +77,28 @@ button:hover {
 }
 
 .qr-output {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 canvas {
   margin-bottom: 10px;
+  background: white;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.footer a {
+  color: #ffa;
+  text-decoration: none;
 }
